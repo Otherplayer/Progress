@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "GProgress.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    [Progress showProgressWithText:@"__无邪_" dealy:1];
+//    [Progress showText:@"ss" onView:self.view];
+    
+    [Progress showToastWithText:@"hahasdfa" position:iToastGravityCenter];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
